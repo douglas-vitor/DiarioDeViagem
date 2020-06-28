@@ -11,18 +11,15 @@
 {% block header %}
     <header>
         <div class="container-gallery">
+            {% for photo in photos %}
+            <a href="{{photo.image}}">
+                <div class="photo">
+                    <span><img src="{{photo.image}}" alt=""></span>
+                </div>
+            </a>
+            {% endfor %}
 
-            <a href="#">
-                <div class="photo">
-                    <span><img src="" alt=""></span>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="photo">
-                    <span><img src="" alt=""></span>
-                </div>
-            </a>
+<!--
             <a href="#">
                 <div class="photo">
                     <span><img src="" alt=""></span>
@@ -48,7 +45,12 @@
                     <span><img src="" alt=""></span>
                 </div>
             </a>
-
+            <a href="#">
+                <div class="photo">
+                    <span><img src="" alt=""></span>
+                </div>
+            </a>
+-->
         </div>
     </header>
 {% endblock header %}

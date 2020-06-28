@@ -41,7 +41,13 @@ db.all(`SELECT * FROM trips WHERE id = 1`, function(err, rows) {
         return console.log(err)
     }
     // Mostra a pagina html com os dados do BD
-    return res.render("gallery.html", { trips : rows })
+    db.all(`SELECT * FROM gallery WHERE codeuser = 1`, function(err, data) {
+        if(err) {
+            return console.log(err)
+        }
+        // Mostra a pagina html com os dados do BD
+        return res.render("gallery.html", { photos : data, trips : rows })
+    })
 })
 })
 

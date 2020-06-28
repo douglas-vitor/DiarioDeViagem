@@ -7,6 +7,7 @@ header {
 
 header .container-gallery {
     width: 100%;
+    height: 94.5%;
     padding: 1em 1em 1em 1em;    
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +19,7 @@ header .container-gallery a .photo {
     width: 5em;
     height: 5.5em;
     border: solid 1px gray;
-    margin: 1em 1em 1em 1em;
+    margin: 0.25em 1em 0.25em 1em;
     background-color: white;
     box-shadow: -3px 3px 5px rgba(128, 128, 128, 0.795);
     -moz-box-shadow: -3px 3px 5px rgba(128, 128, 128, 0.795);
